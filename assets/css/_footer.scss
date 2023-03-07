@@ -1,0 +1,127 @@
+footer {
+    background-color: $cream_soil;
+    .first-footer-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 4rem 7rem;
+        .vvvv {
+            max-width: 45%;
+            h4 {
+                font-weight: 800;
+                font-size: clamp(1.3rem, 1.7vw ,2rem);
+                margin-bottom: 0.8rem;
+                @media(max-width:1200px) {
+                    font-size: clamp(1.5rem, 1.5vw ,1.2rem);
+                }
+            }
+            p {
+                color: #000000d6;
+                font-weight: 400;
+                font-size: clamp(0.8rem, 1.5vw ,1.3rem);
+                margin-bottom: 2rem;
+                margin-right: 2rem;
+                @media(max-width:1200px) {
+                    font-size: clamp(1.1rem, 1.5vw ,1.3rem);
+                    margin-bottom: 1rem;
+                }
+            }
+            span {
+                color: #000000d6;
+                font-weight: 400;
+                font-size: clamp(0.8rem, 1.5vw ,1.3rem);
+                #like {
+                    &:hover {
+                        color: red;
+                        cursor: pointer;
+                        transition: 0.2s;
+                    }
+                }
+                @media(max-width:1200px) {
+                    font-size: clamp(1.1rem, 1.5vw ,1.3rem);
+                }
+            }
+            @media(max-width:1300px) {
+                max-width: 80%;
+            }
+            @media(max-width:576px) {
+                max-width: 100%;
+            }
+        }
+        .footer-link {
+            display: flex;
+            gap: 3rem;
+            div {
+                h5 {
+                    font-weight: 800;
+                    font-size: clamp(1.3rem, 1.7vw ,2rem);
+                    margin-bottom: 1rem;
+                    @media(max-width:1200px) {
+                        font-size: clamp(1.5rem, 1.5vw ,2rem);
+                    }
+                }
+                ul {
+                    padding-left:  0;
+                    margin-bottom: 0;
+                    list-style: none;
+                    li {
+                        margin-top: 0.8rem;
+                        a {
+                            text-decoration: none;
+                            color: #000000d6;
+                            font-weight: 400;
+                            font-size: clamp(0.8rem, 1.3vw ,1.3rem);
+                            &:hover {
+                                color: #4d14d2e6;
+                                transition: 0.3s;
+                            }
+                            @media(max-width:1200px) {
+                                font-size: clamp(1.1rem, 1.5vw ,1.3rem);
+                            }
+                        }
+                    }
+                }
+                @media(max-width:991.98px) {
+                    width: 47%;
+                }
+                @media(max-width:576.98px) {
+                    width: 100%;
+                }
+            }
+            @media(max-width:1300px) {
+                gap: 2.5rem;
+            }
+            @media(max-width:1200px) {
+                gap: 3rem;
+            }
+            @media(max-width:1300px) {
+                width: 100%;
+                justify-content: space-between;
+            }
+            @media(max-width:991.98px) {
+                flex-wrap: wrap;
+                gap: 2rem;
+                align-items: flex-start;
+            }
+            @media(max-width:768.98px) {
+                flex-wrap: nowrap;
+                gap: 2rem;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+            @media(max-width:576px) {
+                gap: 3rem;
+            }
+        }
+        @media(max-width:1200px) {
+            flex-direction: column;
+            gap: 2rem;
+        }
+        @media(max-width:991.98px) {
+            padding: 4rem 4rem;
+        }
+        @media(max-width:576.98px) {
+            gap: 3rem;
+            padding: 4rem 3rem;
+        }
+    }
+}

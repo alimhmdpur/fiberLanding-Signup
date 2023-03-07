@@ -1,0 +1,16 @@
+@import "variables";
+@import "header";
+@import "main";
+@import "footer";
+@import "signup";
+html{
+    @media(max-width:440px) {
+        font-size: 14px;
+    }
+    @media(max-width:380px) {
+        font-size: 12px;
+    }
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
